@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+        <title>COVID MAP</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #map{
+                width: 100vw;
+                height: 100vh;
+            }
+            #menu {
+                top: 0px;
+                width: auto;
+                height: auto;
+                position: absolute;
+                background: #efefef;
+                padding: 1vw;
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id='map'></div>
+        <div id="menu">
+            <input id="light-v11" type="radio" name="rtoggle" value="light">
+            <label for="light-v11">light</label>
+            <input id="dark-v10" type="radio" name="rtoggle" value="dark" checked="checked">
+            <label for="dark-v10">dark</label>
+            <input id="streets-v11" type="radio" name="rtoggle" value="streets">
+            <label for="streets-v11">streets</label>
+        </div>
+    </body>
+        
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1Ijoic291bXlhNTQzMjEiLCJhIjoiY2xtMXRhZGF3MGtnajNjczY4dno5dHdwOSJ9.PABiGOVdu5L96Sidy9oJKQ';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/dark-v10',
+                zoom: 1,
+            });
+
+            const layerList = document.getElementById('menu');
+            const inputs = layerList.getElementsByTagName('input');
+
+            for (const input of inputs) {
+                input.onclick = (layer) => {
+                    const layerId = layer.target.id;
+                    map.setStyle('mapbox://styles/mapbox/' + layerId);
+                };
+            }
+        </script>
+        <script src="./index.js"></script>
+</html>

@@ -1,0 +1,136 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Sedgwick+Ave+Display&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script&family=Sedgwick+Ave+Display&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+#navbar{
+    background-color: black;
+    padding: 4vh;
+    font-family: 'Sedgwick Ave Display', cursive;
+    position: sticky;
+    top: 0px;
+    opacity: 0.85;
+}
+#navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    padding: 3vw;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: whitesmoke;
+}
+#navbar li a:hover{
+    color: orange;
+}
+#introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.2),rgba(0,0,0,0.6)),url('/static/alexandre-dinaut-FwzU0YtzB2M-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+#sponsors{
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+#sponsors #heading{
+    text-decoration: underline;
+}
+.card-section{
+    display: flex;
+}
+.card{
+    text-align: center;
+    color: whitesmoke;
+    margin: 2vw;
+    padding: 2vw;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+    height: auto;
+}
+#addidas{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/amirhossein-hasani-3MLjh_MAJmY-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#rayban{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/daniel-schludi-7J-ro9TbEp0-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#reebok{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/reebok.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#microsoft{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/microsoft_logo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#netflix{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/netflix_logo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#amazon{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/amazon_logo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: whitesmoke;
+    height: 5vh;
+}
+.btn{
+    cursor: pointer;
+}
+@media (max-width: 450px){
+    .card-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        font-size: xx-small;
+    }
+    #navbar ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    #introduction{
+        align-items: center;
+    }
+}

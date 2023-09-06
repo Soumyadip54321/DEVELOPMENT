@@ -1,0 +1,34 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+block style
+  style 
+    include ../static/index.css
+block content
+        section#introduction 
+            h1 Welcome To Soumyadip's Dance Academy   
+            p  Where success meets passion
+
+        section#sponsors 
+            div#heading
+                | Our Sponsors 
+            div.card-section
+                div.card#addidas
+                    |  Addidas 
+                    button.btn Click To Know More 
+                div.card#rayban
+                    |  Ray-Ban 
+                    button.btn Click To Know More 
+                div.card#reebok
+                    |  Reebok 
+                    button.btn Click To Know More 
+                div.card#microsoft
+                    |  Microsoft 
+                    button.btn Click To Know More 
+                div.card#netflix
+                    |  Netflix 
+                    button.btn Click To Know More 
+                div.card#amazon
+                    |  Amazon 
+                    button.btn Click To Know More

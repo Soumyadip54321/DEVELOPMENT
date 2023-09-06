@@ -1,0 +1,44 @@
+doctype html
+html 
+    head 
+        title Soumyadip's Dance Site
+        style 
+            include ../static/index.css
+    body 
+        nav#navbar 
+            ul 
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Contact]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Services]
+        section#introduction 
+            h1 Welcome To Soumyadip's Dance Academy   
+            p  Where success meets passion
+
+        section#sponsors 
+            div#heading
+                | Our Sponsors 
+            div.card-section
+                div.card#addidas
+                    |  Addidas 
+                    button.btn Click To Know More 
+                div.card#rayban
+                    |  Ray-Ban 
+                    button.btn Click To Know More 
+                div.card#reebok
+                    |  Reebok 
+                    button.btn Click To Know More 
+                div.card#microsoft
+                    |  Microsoft 
+                    button.btn Click To Know More 
+                div.card#netflix
+                    |  Netflix 
+                    button.btn Click To Know More 
+                div.card#amazon
+                    |  Amazon 
+                    button.btn Click To Know More 
+        footer#footer 
+            | Copyright &copy SoumyadipDanceAcademy.com || All Rights Reserved
+        script 
+            include ../static/index.js

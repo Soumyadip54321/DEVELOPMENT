@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Soumyadip's Gym</title>
+        <style>
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            .banner-image{
+                width: 100vw;
+                height: 100vh;
+            }
+            .icon{
+                width: 4vw;
+                height: 6vh;
+            }
+
+            .navbar{
+                width: 100vw;
+                height: 12vh;
+                color: white;
+                position: absolute;
+                top: 1vh;
+                text-align: center;
+                border: 2px solid white;
+                background-color: black;
+                opacity: 0.7;
+                /* font-size: x-large; */
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .navbar h4{
+                margin: auto;
+                font-size: larger;
+            }
+            .navbar a{
+                text-decoration: none;
+                font-size: 1.5rem;
+                color: orange;
+                border: 1px solid orange;
+                border-radius: 3px;
+                padding: 5px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+            .navbar a:hover{
+                color: white;
+                font-weight: bold;
+                font-size: xx-large;
+                text-decoration: underline;
+                background-color: orange;
+            }
+
+            #link1{
+                position: absolute;
+                left: 3vw;
+                top: 4vh;
+            }
+            #link2{
+                position: absolute;
+                left: 18vw;
+                top: 4vh;
+            }
+            #link3{
+                position: absolute;
+                right: 22vw;
+                top: 4vh;
+            }
+            #link4{
+                position: absolute;
+                right: 3vw;
+                top: 4vh;
+            }
+
+            header form{
+                position: absolute;
+                top: 28vh;
+                left: 10vw;
+                width: 17vw;
+                padding: 0.3vw;
+                background-color: gray;
+                border: 5px solid orange;
+                border-radius: 5px;
+                font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                opacity: 0.8;
+            }
+
+            header div.formlabel{
+                position: absolute;
+                top: 16vh;
+                left: 13vw;
+                width: 10vw;
+                margin: auto;
+                color: orange;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                border: 2px solid orange;
+                text-align: center;
+            }
+
+            header form input,textarea{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: small;
+            }
+
+            form button{
+                background-color: orange;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                display: inline-block;
+                margin: 2px;
+                padding: 6px;
+                width: 8vw;
+            }
+            form #button1:hover{
+                background-color: green;
+                font-size: larger;
+            }
+            form #button2:hover{
+                background-color: red;
+                font-size: larger;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="banner">
+            <img src="./resources/gymbanner.jpeg" alt="gym banner" class="banner-image">
+
+            <div class="navbar">
+                <img src="./resources/gymicon.png" alt="" class="icon">
+                <h4>SOUMYADIP FITNESS</h4>
+
+                <a href="#" target="_blank" id="link1">ABOUT US</a>
+                <a href="#" target="_blank" id="link2">FITNESS CALCULATOR</a>
+                <a href="#" target="_blank" id="link3">LOGIN</a>
+                <a href="#" target="_blank" id="link4">CONTACT US</a>
+            </div>
+
+            <div class="formlabel">
+                <h3>JOIN THE BEST GYM IN KOLKATA</h3>
+            </div>
+
+            <form action="backend.php">
+                <!-- <label for="myname">NAME:</label> -->
+                <div>
+                    <input type="text" name="name" id="myname" placeholder="YOUR NAME">
+                </div>
+                <br>
+
+                <div>
+                    <input type="text" name="contact detail" id="mycontact" placeholder="CONTACT NUMBER">
+                </div>
+                <br>
+
+                <div>
+                    <input type="text" name="email" id="mymail" placeholder="EMAIL">
+                </div>
+                <br>
+
+                <div>
+                    <input type="text" name="locality" id="mylocality" placeholder="YOUR LOCALITY">
+                </div>
+                <br>
+
+                <div>
+                    <textarea name="address" id="myaddress" cols="30" rows="6" placeholder="TYPE IN YOUR ADDRESS HERE"></textarea>
+                </div>
+                <br>
+
+                <div>
+                    GENDER:  MALE<input type="radio" name="gender" id="mygender"> FEMALE<input type="radio" name="gender" id="mygender">
+                    OTHERS<input type="radio" name="gender" id="mygender">
+                </div>
+                <br>
+
+                <div>
+                    <input type="date" name="dob" id="mydob" placeholder="YOUR DATE OF BIRTH">
+                </div>
+                <br>
+
+                <div>
+                    SELECT EXERCISE TYPE:
+                    <select name="experience" id="myexp">
+                        <option value="Moderate">MODERATE</option>
+                        <option value="Light" selected>LIGHT</option>
+                        <option value="Heavy">HEAVY</option>
+                        <option value="Impactfull">IMPACTFULL</option>
+                    </select>
+                </div>
+                <br>
+
+                <button type="submit" id="button1">SUBMIT NOW</button>
+                <button type="reset" id="button2">RESET</button>
+            </form>
+        </header>
+    </body>
+</html>
