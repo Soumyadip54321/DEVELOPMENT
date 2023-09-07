@@ -1,37 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 .header {
-    background-color: cornflowerblue;
+    background-image: url('./resources/codebg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
 }
-
+body{
+    margin: 0px;
+    padding: 0px;
+}
 .about-me{
     font-size: 20px;
     opacity: 0.5;
 }
-
 .title{
     font-weight: bold;
 }
-
-h1{
-    color: azure;
+.card-body{
+    height: 25vh;
+    overflow: auto;
 }
-
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url("pattern.webp");
+.card img{
+    height: 20vh;
 }
-.navigation{
+.heading{
     text-align: center;
+    font-size: larger;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
-.navigation a{
-    margin: auto;
-}
-a:link{
-    color: black;
-}
-a:visited{
-    color: blue;
-}
-a:hover{
-    color: skyblue;
+.nav-item a:hover{
+    color: white;
+    font-size: larger;
 }

@@ -4,76 +4,103 @@
 <head>
   <title></title>
   <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav class="navigation">
-    <a href="#education">Education</a>
-    <a href="#projects">My Projects</a>
-    <a href="#contact">Contact Me</a>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#education" class="nav-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">My Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact Me</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-  <div class="header">
-    <img src="./resources/674F082C-E0B6-4511-8CCF-1ADA732573C3_1_105_c.jpeg" height="250px" width="400px"/>
-    <h1>Soumyadip Sikdar</h1>
-    <p class="about-me">I am a budding developer specializing in Full-Stack Development. Started out as a Mechanical Engineer but as they say true art captivates, well Web development was that art for me.</p>
+
+  <div class="container-fluid header">
+    <img src="./resources/myimage.jpeg" alt="image of Soumyadip Sikdar" class="img-fluid img-thumbnail mt-3" width="300vw" height="auto">
+    <h2>Soumyadip Sikdar</h2>
+    <div class="about-me">I am a budding developer specializing in Full-Stack Development. Started out as a Mechanical Engineer but as they say true art captivates, well Web development was that art for me.</div>
   </div>
 
-  <div id="education">
-    <header>
-      <h2><em>Education</em></h2>
-    </header>
-    
-    <section>
-      <br>
-      <h4>Indian Statistical Institute(2022-present)</h4>
-      <h5>MTech Computer Science</h5>
-      <br>
-    </section>
-    
-    <section>
-      <br>
-      <h4>Jadavpur University(2013-2017)</h4>
-      <h5>Bachelor Of Engineering in Mechanical</h5>
-      <h5>CGPA: 7.3/10</h5>
-      <br>
-    </section>
-    
-    <section>
-      <br>
-      <h4>St. Stephen's School</h4>
-      <h5>Class XII(ISC)</h5>
-      <h5>Science</h5>
-      <h5>Percentage:- 83.5%</h5>
-      <br>
-    </section>
-    
-    <section>
-      <h4>St. Stephen's School</h4>
-      <h5>Class X(ICSE)</h5>
-      <h5>Percentage:- 84%</h5>
-    </section>
-    <br>
+  <div class="container-fluid bg-dark" id="eduaction">
+    <div class="heading">
+      EDUCATION
+    </div>
+    <div class="row">
+
+      <div class="col-md-3">
+        <div class="card border bg-info">
+          <img src="./resources/isi.jpeg" alt="" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column">
+            <h4 class="card-title">Indian Statistical Institute(2022-present)</h4>
+            <div class="card-text">MTech Computer Science</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card border bg-info">
+          <img src="./resources/ju.jpeg" alt="" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column">
+            <h4 class="card-title">Jadavpur University(2013-2017)</h4>
+            <div class="card-text">Bachelor Of Engineering in Mechanical</div>
+            <div class="card-text">CGPA: 7.3/10</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card border bg-info">
+          <img src="./resources/school.jpeg" alt="" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column">
+            <h4 class="card-title">St. Stephen's School(2010-2012)</h4>
+            <div class="card-text">Class XII(ISC)</div>
+            <div class="card-text">Science</div>
+            <div class="card-text">Percentage:- 83.5%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card border bg-info">
+          <img src="./resources/school.jpeg" alt="" class="card-img-top">
+          <div class="card-body d-flex flex-wrap flex-column">
+            <h4 class="card-title">St. Stephen's School(2010-2000)</h4>
+            <div class="card-text">Class X(ICSE)</div>
+            <div class="card-text">Percentage:- 84%</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <div id="projects">
-    <br>
-    <h2>Projects</h2>
+  <div class="container-fluid bg-dark" id="projects">
+    <div class="heading">
+      PROJECTS
+    </div>
 
     <section>
-      <p class="title">Data Science Projects</p>
+      <p class="title">DATA SCIENCE</p>
       <ul>
-        <li>Underwater Image Enhancement with Fusion Technique</li>
+        <li>UNDER WATER FUSION TECHNIQUE TOWARDS IMAGE ENHANCEMENT</li>
       </ul>
     </section>
    
     <section>
-      <p class="title">Development projects</p>
+      <p class="title">DEVELOPMENT</p>
       <ul>
-        <li>Yum Yum Fudge Inc.</li>
-        <li>University of Marimont Dance Marathon</li>
+        <li>COVID EFFECT ILLUSTRATOR</li>
+        <li>DANCE WEBSITE</li>
       </ul>
     </section>
-    <br>
   </div>
 
   <div id="contact">
