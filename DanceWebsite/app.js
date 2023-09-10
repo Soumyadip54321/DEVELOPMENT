@@ -24,7 +24,7 @@ app.use('/static',express.static('static'));    //serves static files when invok
 app.use(express.urlencoded());      //middleware function that parses incoming requests
 
 app.set('view engine','pug');                   //sets the view engine to be pug
-app.set('views',path.join(__dirname,'views'));  //sets the path to find the directory to read template files from
+app.set('views',path.join(__dirname,'views'));  //sets the path to the directory to read template files from
 
 //ENDPOINT
 app.get('/',(req,res)=>{
@@ -32,6 +32,9 @@ app.get('/',(req,res)=>{
 })
 app.get('/contact',(req,res)=>{
     res.status(200).render('contact.pug');
+})
+app.get('/about',(req,res)=>{
+    res.status(200).render('about.pug');
 })
 app.post('/contact',(req,res)=>{
     let newdata=new Contact(req.body);

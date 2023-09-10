@@ -34,6 +34,7 @@
 }
 #introduction{
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,19 +50,36 @@
 #sponsors{
     height: 45vh;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: bolder;
     font-size: x-large;
 }
-#sponsors #heading{
-    text-decoration: underline;
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#addidas{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/amirhossein-hasani-3MLjh_MAJmY-unsplash.jpg");
+}
+#rayban{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/daniel-schludi-7J-ro9TbEp0-unsplash.jpg");
+}
+#reebok{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/reebok.webp");
+}
+#microsoft{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/microsoft_logo.jpeg");
+}
+#netflix{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/netflix_logo.webp");
+}
+#amazon{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/amazon_logo.webp");
 }
 .card-section{
-    display: flex;
-}
-.card{
     text-align: center;
     color: whitesmoke;
     margin: 2vw;
@@ -70,61 +88,35 @@
     border-radius: 5px;
     width: 30%;
     height: auto;
-}
-#addidas{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/amirhossein-hasani-3MLjh_MAJmY-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#rayban{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/daniel-schludi-7J-ro9TbEp0-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#reebok{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/reebok.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#microsoft{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/microsoft_logo.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#netflix{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/netflix_logo.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-#amazon{
-    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)),url("/static/amazon_logo.webp");
+    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #footer{
     display: flex;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: black;
     color: whitesmoke;
-    height: 5vh;
+    height: auto;
 }
 .btn{
-    cursor: pointer;
+    color: white;
+    font-size: small;
+    text-decoration: none;
 }
-@media (max-width: 450px){
-    .card-section{
-        flex-direction: column;
-        align-items: center;
-    }
+@media only screen and (max-width: 450px){
     .card{
         font-size: xx-small;
+        flex-wrap: wrap;
+    }
+    .btn{
+        display: none;
     }
     #navbar ul{
         flex-direction: column;

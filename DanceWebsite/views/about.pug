@@ -1,0 +1,82 @@
+doctype html
+html
+  head 
+    title Soumyadip's Dance Site
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous")
+    style 
+      include ../static/index.css
+      include ../static/about.css
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js") 
+  
+  body 
+    nav#navbar 
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/about") About]
+            li #[a(href="/contact") Contact]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Services]
+    div.container-fluid.text-center.fs-1.fw-bold
+      | Know who we are
+
+    div.container-fluid
+      div(id="c1" class="carousel slide" data-bs-ride="carousel")
+        //- Indicators/dots
+        div.carousel-indicators
+          button(type="button" data-bs-target="#c1" data-bs-slide-to="0" class="active")
+          button(type="button" data-bs-target="#c1" data-bs-slide-to="1")
+          button(type="button" data-bs-target="#c1" data-bs-slide-to="2")
+          button(type="button" data-bs-target="#c1" data-bs-slide-to="3")
+        
+        //- The slideshow/carousel
+        div.carousel-inner
+          div.carousel-item.active
+            a(href="#") 
+              img(src="../static/dance3.jpg", alt="" class="rounded-circle img-thumbnail")
+            div.carousel-caption.d-none.d-md-block.text-light.bg-dark.opacity-75
+              h2 UP ABOVE AND BEYOND
+              p.fs-5  Scintillating display of form and balance won us the best team awards at IDCC (International Dance Challenge Championships)
+                | hosted by Frankfurt Academy of Dance, Frankfurt, Germany in 2002
+          div.carousel-item
+            a(href="#") 
+              img(src="../static/dance4.jpg", alt="" class="rounded-circle img-thumbnail")
+            div.carousel-caption.d-none.d-md-block.text-light.bg-dark.opacity-75
+              h2 CATAPULTING GROWTH TO NEWER HEIGHTS
+              p.fs-5 First performance at a major event staged at Prague, Switzerland in 2000.
+                | A breathtaking act by all of our fellow students that catapulted us to newer heights and hoping to 
+                | climb even higher with our motto.
+          div.carousel-item
+            a(href="#") 
+              img(src="../static/dance5.jpg", alt="" class="rounded-circle img-thumbnail")
+            div.carousel-caption.d-none.d-md-block.text-light.bg-dark.opacity-75
+              h2 REDEFINING THE BOUNDARIES
+              p.fs-5 A performance to remember on a moving platform at New York Dance Academy, Spring USA 2007
+                | that captivated a million hearts both on and off-stage and is certainly one of our stellar acts 
+                | till date.
+          div.carousel-item
+            a(href="#") 
+              img(src="../static/dance6.jpg", alt="" class="rounded-circle img-thumbnail")
+            div.carousel-caption.d-none.d-md-block.text-light.bg-dark.opacity-75
+              h2 A GLOWING TEAM WORK
+              p.fs-5 "WALK OF LIFE"-a dance form performed with excuisite sync and balance at Denver, NY, USA Summer 2015.
+                | portrayed not only the meaning with which we live life and give it hope but literally faded 
+                | boundaries between art and life.
+
+        //- Left and right controls/icons
+        button(type="button" data-bs-target="#c1" data-bs-slide="prev" class="carousel-control-prev") 
+          span(class="carousel-control-prev-icon" aria-hidden="true")
+          span.visually-hidden
+            | Previous
+        button(type="button" data-bs-target="#c1" data-bs-slide="next" class="carousel-control-next") 
+          span(class="carousel-control-next-icon" aria-hidden="true")
+          span.visually-hidden
+            | Next
+        
+
+
+    footer#footer 
+        | Copyright &copy SoumyadipDanceAcademy.com || All Rights Reserved
+    
+
+
+    
