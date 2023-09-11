@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
 body{
     display: flex;
     justify-content: center;
     background-color: orange;
-    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size:xx-large;
+    font-family: 'Nabla', cursive;
 }
 
 
@@ -14,6 +19,7 @@ body{
     background-image: url(clock.png);
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 10px;
 }
 
 #hour,#minute,#second{
@@ -44,4 +50,7 @@ body{
     left: 49.25%;
     opacity: 0.8; 
     background: blue;
+}
+.footer{
+    background-color: cadetblue;
 }
